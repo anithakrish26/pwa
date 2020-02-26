@@ -1,8 +1,9 @@
 const staticCacheName = "static-cache";
 const dynamicCacheName = "dynamic-cache";
 const assets = [
+    ".",
     "/index.html",
-    "index.js",
+    "/index.js",
     "/styles.css",
 ];
 

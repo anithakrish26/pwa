@@ -2,7 +2,7 @@
     "name": "Little Italy",
     "short_name": "Little Italy",
     "description": "Little Italy - Restaurant app",
-    "start_url": "/index.html",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#000",
     "theme_color": "#000",
