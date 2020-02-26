@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Little Italy</title>
 
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="shortcut icon" href="images/logo_96x96png" type="image/png" />
   <link href="https://fonts.googleapis.com/css?family=Tangerine:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
@@ -63,5 +62,12 @@
       </section>
      </div>
   </main>
-  <script type="text/javascript" src="sw.js"></script>
+  <script type="text/javascript">
+  if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
 </body>
